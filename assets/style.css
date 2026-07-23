@@ -1,0 +1,329 @@
+/* 読み分けちゃん2 — 先行テスター版 案内ページ共通スタイル */
+
+:root {
+  --bg: #faf8f5;
+  --bg-card: #ffffff;
+  --text: #2b2a28;
+  --text-soft: #6b675f;
+  --accent: #c2571d;        /* 暖色系（読み上げ＝声の温度感） */
+  --accent-soft: #fdeee3;
+  --line: #e6e1d8;
+  --badge-bg: #fff3e0;
+  --badge-text: #a34a15;
+  --code-bg: #f4f1ec;
+  --warn-bg: #eef4fb;
+  --warn-line: #b9d2ec;
+  --shadow: 0 1px 3px rgba(60, 50, 40, .08), 0 8px 24px rgba(60, 50, 40, .06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1b18;
+    --bg-card: #26231f;
+    --text: #ece8e1;
+    --text-soft: #a8a299;
+    --accent: #e87a45;
+    --accent-soft: #3a2a1e;
+    --line: #3a362f;
+    --badge-bg: #3a2a1e;
+    --badge-text: #f0a878;
+    --code-bg: #302c26;
+    --warn-bg: #22293a;
+    --warn-line: #3c4a66;
+    --shadow: 0 1px 3px rgba(0, 0, 0, .4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic UI", Meiryo, sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* ---------- ヘッダー ---------- */
+
+.site-head {
+  padding: 14px 0 0;
+  font-size: .9rem;
+}
+.site-head a { color: var(--text-soft); text-decoration: none; }
+.site-head a:hover { color: var(--accent); }
+
+.hero {
+  text-align: center;
+  padding: 56px 0 40px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 4px 18px;
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  margin: 18px 0 6px;
+  letter-spacing: .02em;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  margin: 0 0 4px;
+}
+
+.hero .thanks {
+  max-width: 620px;
+  margin: 22px auto 0;
+  text-align: left;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  padding: 18px 24px;
+  font-size: .95rem;
+}
+
+/* ---------- 見出し・本文 ---------- */
+
+h2 {
+  font-size: 1.45rem;
+  margin: 64px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  letter-spacing: .02em;
+}
+
+h3 {
+  font-size: 1.12rem;
+  margin: 36px 0 10px;
+  color: var(--accent);
+}
+
+p { margin: 10px 0; }
+
+a { color: var(--accent); }
+
+ul, ol { padding-left: 1.5em; }
+li { margin: 6px 0; }
+
+small, .soft { color: var(--text-soft); }
+
+code, .kbd {
+  background: var(--code-bg);
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-family: Consolas, "BIZ UDGothic", monospace;
+  font-size: .92em;
+}
+
+pre {
+  background: var(--code-bg);
+  border-radius: 10px;
+  padding: 14px 18px;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+pre code { background: none; padding: 0; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 48px 0; }
+
+/* ---------- カード・グリッド ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 24px 26px;
+  box-shadow: var(--shadow);
+}
+
+a.card {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform .12s ease, border-color .12s ease;
+}
+a.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.card h3 { margin-top: 0; }
+.card .go {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.feature-grid li {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 0;
+  font-size: .95rem;
+}
+.feature-grid li b { display: block; margin-bottom: 2px; }
+
+/* ---------- ダウンロードボタン ---------- */
+
+.dl-box { text-align: center; margin: 28px 0; }
+
+.dl-button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 16px 44px;
+  box-shadow: var(--shadow);
+  transition: opacity .12s ease;
+}
+.dl-button:hover { opacity: .88; }
+.dl-note { font-size: .85rem; color: var(--text-soft); margin-top: 10px; }
+
+/* ---------- 注意ボックス ---------- */
+
+.note, .warn {
+  border-radius: 12px;
+  padding: 16px 22px;
+  margin: 18px 0;
+  font-size: .95rem;
+}
+.note {
+  background: var(--accent-soft);
+}
+.warn {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+}
+.warn .warn-title, .note .note-title {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ---------- 手順 ---------- */
+
+ol.steps { counter-reset: step; list-style: none; padding-left: 0; }
+ol.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding: 4px 0 14px 52px;
+  margin: 0;
+}
+ol.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0; top: 6px;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ol.steps > li + li { border-top: 1px dashed var(--line); padding-top: 14px; }
+ol.steps > li + li::before { top: 16px; }
+ol.steps b { color: var(--accent); }
+
+/* ---------- スクリーンショット ---------- */
+
+figure {
+  margin: 22px 0;
+  text-align: center;
+}
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+figcaption {
+  font-size: .85rem;
+  color: var(--text-soft);
+  margin-top: 8px;
+}
+.shot-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 640px) {
+  .shot-pair { grid-template-columns: 1fr; }
+}
+
+/* ---------- 表 ---------- */
+
+.table-scroll { overflow-x: auto; }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: .95rem;
+  background: var(--bg-card);
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 8px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--code-bg); }
+
+/* ---------- フッター ---------- */
+
+.site-foot {
+  margin-top: 80px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: .85rem;
+  color: var(--text-soft);
+  text-align: center;
+}
+.site-foot p { margin: 4px 0; }
+
+@media (max-width: 520px) {
+  .hero h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.25rem; }
+}
