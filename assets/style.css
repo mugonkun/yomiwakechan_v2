@@ -101,6 +101,37 @@ body {
   margin: 0 0 4px;
 }
 
+.hero-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 26px 0 4px;
+}
+.hero-shots a {
+  display: block;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.hero-shots img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  cursor: zoom-in;
+  display: block;
+}
+.hero-shots-note {
+  font-size: .82rem;
+  color: var(--text-soft);
+  margin: 0 0 4px;
+}
+@media (max-width: 560px) {
+  .hero-shots { grid-template-columns: 1fr; }
+}
+
 .hero .thanks {
   max-width: 620px;
   margin: 22px auto 0;
