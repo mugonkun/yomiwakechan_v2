@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>お歌記法ガイド — 読み分けちゃん2 先行テスター版</title>
-<meta name="description" content="読み分けちゃん2 のお歌機能（SONG 記法）ガイド。コメントに音符を書くと、そのとおりに歌います。">
+<title>お歌ガイド — 読み分けちゃん2 先行テスター版</title>
+<meta name="description" content="読み分けちゃん2 のお歌機能（SONG 記法）ガイド。セットアップから記法まで、コメントに音符を書くとそのとおりに歌います。">
+<link rel="icon" href="assets/mascot.jpg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,27 +14,70 @@
 <nav class="site-head">
   <a href="index.html">ホーム</a> ／
   <a href="streamer.html">配信者向けガイド</a> ／
-  <a href="song.html">お歌記法ガイド</a>
+  <a href="song.html">お歌ガイド</a>
 </nav>
 
 <header class="hero">
-  <span class="badge">先行テスター版・お歌機能</span>
+  <img class="mascot" src="assets/mascot.jpg" alt="読み分けちゃんのキャラクター" loading="lazy">
+  <div><span class="badge">先行テスター版・お歌機能</span></div>
   <h1>読み分けちゃんに歌ってもらう</h1>
-  <p class="tagline">SONG 記法ガイド — コメントに音符を書くと、そのとおりに歌います。</p>
+  <p class="tagline">コメントに音符を書くと、そのとおりに歌います。</p>
 </header>
 
-<div class="note">
-  <span class="note-title">🎵 リスナーとして参加する方は、インストール不要です</span>
-  読み分けちゃん2 が動いている配信で、コメント欄に <code>[歌]</code> から始まる譜面を書くだけ。
-  あなたのコメントが、そのまま歌になります。
-</div>
-
-<p>コメントで <code>[歌]</code> のあとに音符を並べると、そのとおりに歌います。</p>
-
-<pre><code>[歌]T180 Cかー Dえー Eるー</code></pre>
+<p>このガイドは 2 部構成です。</p>
+<ul>
+  <li><b><a href="#setup">前半：セットアップ</a></b> — 本体を手元の PC で動かして、
+    好きなだけ歌わせて遊べるようにするまで</li>
+  <li><b><a href="#basic">後半：SONG 記法</a></b> — 音符の書き方（実際の配信でコメントで
+    歌わせるときも、記法は同じです）</li>
+</ul>
 
 <!-- ============================================================ -->
-<h2 id="basic">基本</h2>
+<h2 id="setup">セットアップ：手元で歌わせるまで</h2>
+
+<div class="warn">
+  <span class="warn-title">🎤 お歌には VOICEVOX が必要です</span>
+  歌声には、無料の音声合成ソフト <b>VOICEVOX</b> の歌唱機能を使います。
+  読み分けちゃん2 本体だけでは歌えないので、先に
+  <a href="https://voicevox.hiroshiba.jp/">https://voicevox.hiroshiba.jp/</a>
+  からインストールしてください（無料です）。
+</div>
+
+<ol class="steps">
+  <li><b>VOICEVOX をインストールする</b><br>
+    <a href="https://voicevox.hiroshiba.jp/">公式サイト</a>からダウンロードして、
+    画面の案内どおりにインストールします。</li>
+  <li><b>読み分けちゃん2 をインストールする</b><br>
+    <a href="https://github.com/mugonkun/yomiwakechan_v2/releases/latest">最新版のインストーラ</a>を
+    ダウンロードして実行します。<br>
+    <small>※ 途中で「Windows によって PC が保護されました」という青い画面が出たら、
+    <b>「詳細情報」→「実行」</b>で進めてください（<a href="index.html#smartscreen">この警告について</a>）。</small></li>
+  <li><b>VOICEVOX を起動しておく</b><br>
+    ふだんどおり VOICEVOX を起動して、そのまま置いておきます。</li>
+  <li><b>読み分けちゃん2 を起動して「スキャンして受信開始」</b><br>
+    デスクトップの「読み分けちゃん2」アイコンから起動し、
+    <b>コントロールタブ</b>の<b>「スキャンして受信開始」</b>ボタンを押します。<br>
+    <small>※ 配信をしない場合、一括起動タブの配信 ID などは空のままで大丈夫です。</small></li>
+  <li><b>スキャン結果を確認</b><br>
+    エンジンスキャン結果に VOICEVOX が「<b>使用可能</b>」と表示されたら準備完了です。</li>
+  <li><b>「歌声テスト」タブで歌わせてみる</b><br>
+    歌唱声を選んで、入力欄に記法を書いて<b>「歌う」</b>。ここは練習場なので、
+    何度でも自由に試せます（コメント履歴や統計には残りません）。
+    <figure>
+      <a href="screenshots/webinstruct/お歌の壁打ち1.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/お歌の壁打ち1.jpg" alt="歌声テストタブ。譜面の入力欄と「歌う」ボタン、歌エラーウィンドウの外観設定" loading="lazy"></a>
+      <figcaption>歌声テストタブ。書き間違いがあると、どこでつまずいたかをその場で教えてくれる</figcaption>
+    </figure>
+    <small>※ 歌声テストタブでは <code>[歌]</code> は不要で、記法だけを書きます。
+    <code>[歌]</code> が要るのは実際の配信のコメントのとき（<a href="#live">後述</a>）。</small></li>
+</ol>
+
+<!-- ============================================================ -->
+<h2 id="basic">SONG 記法：基本</h2>
+
+<p>コメントで <code>[歌]</code> のあとに音符を並べると、そのとおりに歌います
+（歌声テストタブでは <code>[歌]</code> なしで記法だけ）。</p>
+
+<pre><code>[歌]T180 Cかー Dえー Eるー</code></pre>
 
 <ul>
   <li><b>音の高さ</b>はアルファベットで書く：C＝ド・D＝レ・E＝ミ・F＝ファ・G＝ソ・A＝ラ・B＝シ。</li>
@@ -87,24 +131,27 @@
 <pre><code>[歌]V3そーそー V8らーーー V5みー</code></pre>
 
 <!-- ============================================================ -->
-<h2 id="songtest">配信者の方へ：歌声テストタブで壁打ちできます</h2>
+<h2 id="live">実際の配信で歌わせるとき</h2>
 
-<p>読み分けちゃん2 本体の<b>「歌声テスト」タブ</b>では、SONG 記法をその場で歌わせて
-確認できます。キューを通さないので、実績・統計・コメント履歴には残りません。
-配信前の譜面づくりや、リスナーさんに教える前の練習にどうぞ。</p>
+<div class="warn">
+  <span class="warn-title">⚠ 配信のコメントでは、必ず先頭に <code>[歌]</code> を付けてください</span>
+  <p><b><code>[歌]</code> が付いていないと、譜面はただのコメントとして
+  そのまま読み上げられてしまいます</b>（「てぃーひゃくはちじゅう しー…」のように）。</p>
+  <pre><code>○ [歌]T180 Cかー Dえー Eるー
+× T180 Cかー Dえー Eるー   ← 歌になりません</code></pre>
+  <p>歌声テストタブ（手元での練習）では <code>[歌]</code> なし・配信のコメントでは
+  <code>[歌]</code> あり——ここだけ違うので、配信で使う前に思い出してください。</p>
+</div>
 
-<figure>
-  <img src="screenshots/webinstruct/お歌の壁打ち1.jpg" alt="歌声テストタブ。譜面の入力欄と「歌う」ボタン、歌エラーウィンドウの外観設定" loading="lazy">
-  <figcaption>歌声テストタブ。譜面の壁打ちのほか、歌エラーウィンドウ
-  （書き間違いを配信画面に表示する小窓）の色・フォント・表示時間もここで整えられる</figcaption>
-</figure>
+<p>手元の歌声テストで作った譜面は、先頭に <code>[歌]</code> を付ければ
+そのまま配信のコメントで使えます。</p>
 
 <!-- ============================================================ -->
 <h2 id="tips">テスターの皆さんへ</h2>
 
 <ul>
-  <li><b>長い譜面はコメントの文字数上限で途切れます。</b>いまは譜面を分けて送ってください
-    （複数コメントをつなげて歌う仕組みは設計中です）。</li>
+  <li><b>長い譜面はコメントの文字数上限で途切れます。</b>配信では譜面を分けて送ってください
+    （複数コメントをつなげて歌う仕組みは設計中です）。歌声テストタブには上限の心配はありません。</li>
   <li>音符の書き間違いがあると、どこでつまずいたかをその場でお知らせします。
     直して送り直してみてください。</li>
   <li>「こう書けたら嬉しい」という記法の提案も大歓迎です。この記法自体、

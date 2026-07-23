@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>読み分けちゃん2 — 先行テスター版 ご案内</title>
 <meta name="description" content="配信のコメントを複数の声で読み分けるツール「読み分けちゃん2」先行テスター版の公式配布・案内ページ">
+<link rel="icon" href="assets/mascot.jpg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,11 +14,12 @@
 <nav class="site-head">
   <a href="index.html">ホーム</a> ／
   <a href="streamer.html">配信者向けガイド</a> ／
-  <a href="song.html">お歌記法ガイド</a>
+  <a href="song.html">お歌ガイド</a>
 </nav>
 
 <header class="hero">
-  <span class="badge">先行テスター版</span>
+  <img class="mascot" src="assets/mascot.jpg" alt="読み分けちゃんのキャラクター。オレンジのつなぎとヘルメット、うさ耳で両手を上げている" loading="lazy">
+  <div><span class="badge">先行テスター版</span></div>
   <h1>読み分けちゃん2</h1>
   <p class="tagline">配信のコメントを、リスナーごとに違う声で。</p>
   <div class="thanks">
@@ -35,7 +37,7 @@
 ツイキャス・YouTube のコメント取得に対応し、VOICEVOX（無料）などの音声合成エンジンと
 連携して動きます。</p>
 
-<p>前身の「読み分けちゃん」（v1）を 4 年間、実際の配信で毎日使い込み、
+<p>前身の「読み分けちゃん」（v1）を 4 年間、実際の配信で使い込み、
 リスナーさんの提案を取り込みながら全面的に作り直したのがこの v2 です
 （<a href="#background">開発の背景</a>）。</p>
 
@@ -60,14 +62,16 @@
   </a>
   <a class="card" href="song.html">
     <h3>🎵 お歌機能を試してみたい方へ</h3>
-    <p>読み分けちゃん2 が動いている配信で、<b>コメントに音符を書くと、そのとおりに歌います</b>。
-    リスナーとして参加する方は<b>インストール不要</b>。コメントを書くだけです。</p>
+    <p><b>コメントに音符を書くと、そのとおりに歌います</b>。
+    本体を手元の PC で動かせば、歌声テストで好きなだけ歌わせて遊べます
+    （VOICEVOX が必要）。</p>
     <ul>
+      <li>セットアップ：手元で歌わせるまで</li>
       <li>SONG 記法の基本（ドレミの書き方）</li>
-      <li>音の長さ・テンポ・オクターブ</li>
-      <li>ビブラート・スタッカートなどの表現</li>
+      <li>音の長さ・テンポ・オクターブなどの表現</li>
+      <li>実際の配信で歌わせるとき（<b>先頭に [歌]</b>）</li>
     </ul>
-    <span class="go">お歌記法ガイドへ →</span>
+    <span class="go">お歌ガイドへ →</span>
   </a>
 </div>
 
@@ -131,20 +135,23 @@
   <li><b>🤝 コラボ配信対応</b>コラボ相手の枠のコメントもまとめて取得・読み分け</li>
 </ul>
 
-<p class="soft"><small>基本機能（コメント取得・読み上げ・声の振り分け）は、正式版でも無料で提供する予定です。</small></p>
-
 <!-- ============================================================ -->
 <h2 id="background">v2 開発の背景</h2>
 
 <p>読み分けちゃんの初代（v1）は、作者自身のツイキャス配信のために生まれ、
-<b>4 年間、ほぼ毎日の配信で使い込まれてきました</b>。</p>
+4 年にわたって実際の配信で使われてきました。</p>
 
 <figure>
-  <div class="shot-pair">
+  <a href="screenshots/webinstruct/v1の画像1.jpg" target="_blank" rel="noopener">
     <img src="screenshots/webinstruct/v1の画像1.jpg" alt="初代・読み分けちゃん（v1）のコントロール画面。エンジンごとのスキャン設定と送受信設定が並ぶ" loading="lazy">
+  </a>
+  <figcaption>初代（v1）のコントロール画面（画像はクリックで原寸表示）</figcaption>
+</figure>
+<figure>
+  <a href="screenshots/webinstruct/v1の画像2.jpg" target="_blank" rel="noopener">
     <img src="screenshots/webinstruct/v1の画像2.jpg" alt="初代・読み分けちゃん（v1）のコメント者設定画面。話者選択とパラメータスライダー" loading="lazy">
-  </div>
-  <figcaption>初代・読み分けちゃん（v1）。ここから 4 年の実運用が始まった</figcaption>
+  </a>
+  <figcaption>初代（v1）のコメント者設定画面。ここから 4 年の実運用が始まった</figcaption>
 </figure>
 
 <p>v2 は、その 4 年間の実用経験と、<b>配信に来てくれたリスナーさんたちの提案</b>を
