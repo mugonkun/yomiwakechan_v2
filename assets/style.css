@@ -283,13 +283,14 @@ figcaption {
   color: var(--text-soft);
   margin-top: 8px;
 }
-.shot-placeholder {
-  border: 2px dashed var(--line);
-  border-radius: 10px;
-  color: var(--text-soft);
-  padding: 56px 20px;
-  font-size: .9rem;
-  background: var(--bg-card);
+.shot-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+@media (max-width: 640px) {
+  .shot-pair { grid-template-columns: 1fr; }
 }
 
 /* ---------- 表 ---------- */
