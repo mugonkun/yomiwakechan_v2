@@ -81,6 +81,14 @@ body {
   letter-spacing: .08em;
 }
 
+.mascot {
+  width: 190px;
+  max-width: 60%;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+
 .hero h1 {
   font-size: 2.1rem;
   margin: 18px 0 6px;
