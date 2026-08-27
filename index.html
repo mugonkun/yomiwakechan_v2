@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>読み分けちゃん2 — 先行テスター版 ご案内</title>
-<meta name="description" content="配信のコメントを複数の声で読み分けるツール「読み分けちゃん2」先行テスター版の公式配布・案内ページ">
+<title>読み分けちゃん2 — v2.10 ご案内</title>
+<meta name="description" content="配信のコメントを複数の声で読み分けるツール「読み分けちゃん2」v2.10 の公式配布・案内ページ">
 <link rel="icon" href="assets/mascot.jpg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -19,24 +19,22 @@
 
 <header class="hero">
   <img class="mascot" src="assets/mascot.jpg" alt="読み分けちゃんのキャラクター。オレンジのつなぎとヘルメット、うさ耳で両手を上げている" loading="lazy">
-  <div><span class="badge">先行テスター版</span></div>
+  <div><span class="badge">v2.10</span></div>
   <h1>読み分けちゃん2</h1>
   <p class="tagline">配信のコメントを、リスナーごとに違う声で。</p>
   <div class="hero-shots">
-    <a href="screenshots/webinstruct/通常稼働時1.jpg" target="_blank" rel="noopener">
-      <img src="screenshots/webinstruct/通常稼働時1.jpg" alt="稼働中のコントロールタブ。読み上げ統計・エンジンスキャン結果・ログが並ぶ" loading="lazy">
+    <a href="screenshots/webinstruct/v210screenshots/timeline.png" target="_blank" rel="noopener">
+      <img src="screenshots/webinstruct/v210screenshots/timeline.png" alt="稼働中のタイムライン画面。中央にコメントが流れ、ピンクの帯にいま読んでいるコメントが乗っている" loading="lazy">
     </a>
-    <a href="screenshots/webinstruct/リスナー事前登録3.png" target="_blank" rel="noopener">
-      <img src="screenshots/webinstruct/リスナー事前登録3.png" alt="リスナーごとの設定画面。敬称・読み替え・優先度・声の割り当て" loading="lazy">
+    <a href="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" target="_blank" rel="noopener">
+      <img src="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" alt="リスナー設定タブ。左にコメント者の一覧、右に敬称・読み替え・優先度・声の割り当て" loading="lazy">
     </a>
   </div>
-  <p class="hero-shots-note">稼働中の画面と、リスナーごとの設定画面（クリックで拡大）。
-  画面写真は v2.00 時点のもので、v2.10 では<a href="#whatsnew">タイムライン表示を軸にした新しい画面</a>になりました</p>
+  <p class="hero-shots-note">稼働中のタイムライン画面と、リスナーごとの設定画面（クリックで拡大）</p>
   <div class="thanks">
-    <p>このページは、<b>先行テストに参加してくださる皆さんだけ</b>に向けたご案内です。
-    読み分けちゃん2 はいま β 版——皆さんと一緒に仕上げの磨きをかけている段階です。
-    ここでのテストの経験を反映しながら、このまま正式版へ育てていきます。
-    最初の使い手になってくださって、ありがとうございます。</p>
+    <p>読み分けちゃん2 は、<b>実際の配信で使いながら育ててきたツール</b>です。
+    使ってくださっている皆さんの「こうだったら嬉しい」を取り込みながら、いまも磨き続けています。
+    気づいたことがあれば、ぜひ教えてください。使っていただけること自体が、いちばんの励みです。</p>
   </div>
 </header>
 
@@ -59,7 +57,7 @@
 <!-- ============================================================ -->
 <h2 id="audience">あなたはどちらですか？</h2>
 
-<p>テスターの皆さんへのご案内は、2 つに分かれています。</p>
+<p>ご案内は、2 つに分かれています。</p>
 
 <div class="cards">
   <a class="card" href="streamer.html">
@@ -178,7 +176,36 @@
   <li><b>🎯 読みモードに「選択モード」を追加</b>標準モード（おすすめ）は届いたコメントを上から順に
     自動ですべて読み上げます。選択モードは自動では読まず、タイムラインから読みたいコメントを
     選んで読み上げます。コメントの多い配信向けです（あとからいつでも切り替えられます）</li>
+  <li><b>🎙 VOICEVOX があれば初期の声が自動で整います</b>名前の読み上げ＝四国めたん、
+    未登録の方＝ずんだもん、といった初期割り当てが最初から入ります。声コマンドの
+    「泣き」「じじい」「ひそひそ」「ヒソヒソ」も用意済みです
+    （VOICEVOX が無くても Windows 標準音声で最低限は動きます）</li>
 </ul>
+
+<h3>画面で見る v2.10</h3>
+
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/status.jpg" target="_blank" rel="noopener">
+    <img src="screenshots/webinstruct/v210screenshots/status.jpg" alt="ステータスタブのエンジンスキャン結果。VOICEROID2・VOICEVOX・COEIROINK・AivisSpeech・CeVIO AI・VOICEPEAK・棒読みちゃん・Windows 音声合成が並ぶ" loading="lazy">
+  </a>
+  <figcaption>ステータスタブ。使えるエンジンと話者数がひと目で分かります
+  （画像はクリックで原寸表示）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/settings2.jpg" target="_blank" rel="noopener">
+    <img src="screenshots/webinstruct/v210screenshots/settings2.jpg" alt="アプリ設定タブ。使用エンジンごとの「名前をキャッシュする」と、先読み準備の設定" loading="lazy">
+  </a>
+  <figcaption>読み上げを速くしている仕組み。読み上げた名前の音声を保存しておく<b>名前キャッシュ</b>と、
+  次のコメントを裏で先に作っておく<b>先読み準備</b>（どちらも既定でオン）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/namereadingsetting.jpg" target="_blank" rel="noopener">
+    <img src="screenshots/webinstruct/v210screenshots/namereadingsetting.jpg" alt="特殊読み上げタブ。名前の読み上げに四国めたん、声コマンドのタグに泣き・じじい・ひそひそ・ヒソヒソ" loading="lazy">
+  </a>
+  <figcaption>特殊読み上げタブ。名前の読み上げや、声コマンドのタグはここで調整できます</figcaption>
+</figure>
 
 <div class="note">
   <span class="note-title">💡 動作ログの記録について</span>
@@ -211,6 +238,22 @@
   <li><b>👂 空耳モード</b>英語ボイスに日本語をしゃべらせる遊び機能</li>
   <li><b>🤝 コラボ配信対応</b>コラボ相手の枠のコメントもまとめて取得・読み分け</li>
 </ul>
+
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/settings1.jpg" target="_blank" rel="noopener">
+    <img src="screenshots/webinstruct/v210screenshots/settings1.jpg" alt="アプリ設定タブ。混雑スキップの閾値、名前読み上げの省略、優先度変換・スキップ免除の設定" loading="lazy">
+  </a>
+  <figcaption>混雑したときの振る舞いはここで決めます。滞留の段階ごとに、どの優先度まで捨てるか
+  （有料アイテムはスキップ免除にできます）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/dic.jpg" target="_blank" rel="noopener">
+    <img src="screenshots/webinstruct/v210screenshots/dic.jpg" alt="辞書設定タブ。本文の文字列と読みの対応表、繰り返し圧縮の設定" loading="lazy">
+  </a>
+  <figcaption>読み上げ辞書。読み間違えやすい言葉や、配信内の言い回しをまとめて置き換えられます
+  （「wwwww」のような連続を丸める設定つき）</figcaption>
+</figure>
 
 <!-- ============================================================ -->
 <h2 id="background">v2 開発の背景</h2>
@@ -249,13 +292,13 @@
 それが読み分けちゃん2 です。</p>
 
 <!-- ============================================================ -->
-<h2 id="beta">β 版としてのお願い</h2>
+<h2 id="beta">ご利用にあたってのお願い</h2>
 
 <ul>
-  <li><b>本ソフトは β 版です。</b>不具合や、動作が発展途上の項目があります
+  <li><b>まだ発展途上の項目があります。</b>不具合や、動作が育ちきっていないところがあります
     （<a href="streamer.html#wip">既知の発展途上項目</a>）。気づいたことがあれば、ぜひ教えてください。
-    テスターの皆さんの報告が、そのまま正式版の品質になります。</li>
-  <li><b>使用期限について</b>：β 版の機能を多く含むため、安全のための予防的措置として使用期限を
+    皆さんの報告が、そのまま次の版の品質になります。</li>
+  <li><b>使用期限について</b>：開発途上の機能を多く含むため、安全のための予防的措置として使用期限を
     設定しています（古い版が使われ続けることを防ぐためのもので、機能制限が目的ではありません）。
     使用期限はアップデートのたびに約 1 年延長される予定です。期限が近づいたら、
     このページから新しいバージョンを入手してください。</li>
@@ -280,7 +323,7 @@
 この場を借りて、深く感謝申し上げます。</p>
 
 <footer class="site-foot">
-  <p>読み分けちゃん2（先行テスター版）</p>
+  <p>読み分けちゃん2 v2.10</p>
   <p>作者（本ソフトの権利者）：X アカウント <a href="https://x.com/mugonkun">@mugonkun</a> の所有者</p>
   <p>公式配布ページ：<a href="https://github.com/mugonkun/yomiwakechan_v2">github.com/mugonkun/yomiwakechan_v2</a></p>
 </footer>

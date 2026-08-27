@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>配信者向けガイド — 読み分けちゃん2 先行テスター版</title>
-<meta name="description" content="読み分けちゃん2 先行テスター版：既存配信者向けの導入・設定ガイド">
+<title>配信者向けガイド — 読み分けちゃん2 v2.10</title>
+<meta name="description" content="読み分けちゃん2 v2.10：配信者向けの導入・設定ガイド">
 <link rel="icon" href="assets/mascot.jpg">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -18,23 +18,14 @@
 </nav>
 
 <header class="hero">
-  <span class="badge">先行テスター版・配信者向け</span>
+  <span class="badge">v2.10・配信者向け</span>
   <h1>配信で使うまでの手引き</h1>
   <p class="tagline">すでにツイキャスなどで配信をしている方向けのガイドです。</p>
 </header>
 
 <p>このページでは、インストールから最初の配信で使うまでを順に案内します。
 途中でつまずいたら、遠慮なく X <a href="https://x.com/yomiwakechan">@yomiwakechan</a> まで。
-テスター版なので「分かりにくかった」という報告そのものが宝です。</p>
-
-<div class="warn">
-  <span class="warn-title">⚠ このページの画面写真は v2.00 時点のものです</span>
-  <p><b>v2.10 で画面構成が新しくなりました</b>（タイムライン表示が主画面になり、タブの名前も
-  変わっています）。手順の<b>文章は v2.10 に合わせて更新済み</b>ですが、
-  <b>画面写真の差し替えは準備中</b>です。写真と実際の画面が違って見えても、
-  文章のほうを目印に進めてください。
-  変更点の一覧は<a href="index.html#whatsnew">v2.10 の更新内容</a>をご覧ください。</p>
-</div>
+「分かりにくかった」という報告そのものが宝です。</p>
 
 <!-- ============================================================ -->
 <h2 id="install">1. インストール</h2>
@@ -100,10 +91,14 @@
     使う音声エンジン（VOICEVOX など）にチェックが入っているかは
     <b>「読み上げアプリ起動設定」タブ</b>で確認できます。
     <figure>
-      <a href="screenshots/webinstruct/初回起動1.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/初回起動1.png" alt="v2.00 時点の一括起動タブ。フィーダー欄（ツイキャス・YouTube）とエンジン欄（VOICEROID2・VOICEVOX・CeVIO AI）" loading="lazy"></a>
-      <figcaption>フィーダー欄（左）とエンジン欄（右）。<b>画面写真は v2.00 時点のもの</b>で、
-      v2.10 ではフィーダー欄は「タイムライン設定」タブ、エンジン欄は「読み上げアプリ起動設定」タブに
-      分かれています</figcaption>
+      <a href="screenshots/webinstruct/v210screenshots/timelinesetting.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/timelinesetting.jpg" alt="タイムライン設定タブ。右側にフィーダー欄（ツイキャス・YouTube）と配信者 ID の入力欄" loading="lazy"></a>
+      <figcaption>「タイムライン設定」タブ。右側のフィーダー欄に配信者 ID を入れます
+      （ツイキャスの右のドロップダウンで公式 API 版／WS 版を切り替えます）</figcaption>
+    </figure>
+    <figure>
+      <a href="screenshots/webinstruct/v210screenshots/startupsetting.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/startupsetting.jpg" alt="読み上げアプリ起動設定タブ。VOICEROID2・VOICEVOX・COEIROINK・AivisSpeech・CeVIO AI・棒読みちゃんのチェックと実行ファイルのパス" loading="lazy"></a>
+      <figcaption>「読み上げアプリ起動設定」タブ。使うエンジンにチェックを入れておくと、
+      一括起動でまとめて立ち上がります</figcaption>
     </figure></li>
   <li><b>タイムラインタブの「一括起動して受信開始」を押す</b><br>
     音声エンジンとコメント取得プログラム（feeder）が、ボタン一つでまとめて立ち上がります。
@@ -111,9 +106,8 @@
     <small>※ feeder の初回起動時にも Windows の警告やファイアウォールの確認が出ることがあります。
     許可して進めてください。</small>
     <figure>
-      <a href="screenshots/webinstruct/初回起動2.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/初回起動2.png" alt="v2.00 時点のコントロールタブ（待機中）。左上に「一括起動して受信開始」ボタン" loading="lazy"></a>
-      <figcaption>「一括起動して受信開始」が本番のスイッチ。<b>画面写真は v2.00 時点のもの</b>で、
-      v2.10 ではこのボタンは「タイムライン」タブにあります</figcaption>
+      <a href="screenshots/webinstruct/v210screenshots/startup.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/startup.jpg" alt="タイムラインタブ（待機中）。左上に「一括起動して受信開始」ボタン、中央の帯に「コメントを待機しています」" loading="lazy"></a>
+      <figcaption>待機中のタイムラインタブ。左上の<b>「一括起動して受信開始」</b>が本番のスイッチです</figcaption>
     </figure></li>
   <li><b>テストコメントで動作確認</b><br>
     配信を開始し、自分のスマホなどからコメントを送ってみてください。
@@ -122,10 +116,14 @@
     <small>※ 読み上げ・スキップ・有料累計などの統計は<b>「ステータス」タブ</b>で見られます
     （v2.00 の「コントロール」タブが改名されたものです）。</small>
     <figure>
-      <a href="screenshots/webinstruct/通常稼働時1.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/通常稼働時1.jpg" alt="v2.00 時点のコントロールタブ（稼働中）。稼働状態・読み上げ統計・エンジンスキャン結果・ログが表示されている" loading="lazy"></a>
-      <figcaption>稼働中の統計表示。読み上げ・スキップ・有料累計などの統計、エンジンごとの話者数、
-      OBS 発話検出の状態がひと目で分かる（<b>画面写真は v2.00 時点のもの</b>＝v2.10 では
-      「ステータス」タブ）</figcaption>
+      <a href="screenshots/webinstruct/v210screenshots/timeline.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/timeline.png" alt="稼働中のタイムラインタブ。中央にコメントが流れ、ピンクの帯にいま読んでいるコメントが乗っている" loading="lazy"></a>
+      <figcaption>稼働中のタイムライン。中央の帯（Currently）が「いま読んでいるところ」で、
+      その上が未読、下が読み終わったコメントです</figcaption>
+    </figure>
+    <figure>
+      <a href="screenshots/webinstruct/v210screenshots/status.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/status.jpg" alt="ステータスタブ。稼働状態・読み上げ統計・エンジンスキャン結果・ログが表示されている" loading="lazy"></a>
+      <figcaption>「ステータス」タブ。読み上げ・スキップ・有料累計などの統計、エンジンごとの話者数、
+      直近のログがひと目で分かります</figcaption>
     </figure></li>
 </ol>
 
@@ -170,7 +168,12 @@
     （「常に許可」にチェックを入れると次回から出ません）。<b>確認画面やエラーらしい表示が出ても正常です。</b></small></li>
   <li><b>「接続チェック」で確認する</b><br>
     設定画面の <b>[接続チェック]</b> で、トークンがちゃんと効いているか確かめられます。
-    確認が終わったら、その設定ウィンドウは閉じて構いません。</li>
+    確認が終わったら、その設定ウィンドウは閉じて構いません。
+    <figure>
+      <a href="screenshots/webinstruct/v210screenshots/twicas_token.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/twicas_token.jpg" alt="トークン設定（ツイキャス公式API）の画面。[認可ページを開く]・トークンの貼り付け欄・[接続チェック]" loading="lazy"></a>
+      <figcaption>トークン設定の画面。上の <b>[認可ページを開く]</b> から始め、
+      うまくいかないときだけ真ん中の貼り付け欄を使います</figcaption>
+    </figure></li>
 </ol>
 
 <div class="note">
@@ -207,11 +210,11 @@
   <li><b>「リスナー設定」タブを開く</b><br>
     コメント者一覧の上にある<b>「事前登録…」</b>ボタンを押します。<br>
     <small>※ このタブは v2.00 では「声と読み上げ」という名前でした（v2.10 で「リスナー設定」に
-    改名）。特殊な読み上げ（棒読み・アナウンスなど）の設定は「特殊読み上げ」タブに分かれています。</small>
+    改名）。名前の読み上げや未登録者などの設定は「特殊読み上げ」タブに分かれています。</small>
     <figure>
-      <a href="screenshots/webinstruct/リスナー事前登録1.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/リスナー事前登録1.png" alt="v2.00 時点の「声と読み上げ」タブ。コメント者一覧の上に「事前登録…」ボタン" loading="lazy"></a>
-      <figcaption>コメント者の左上に「事前登録…」がある
-      （<b>画面写真は v2.00 時点のもの</b>＝v2.10 では「リスナー設定」タブ）</figcaption>
+      <a href="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" alt="リスナー設定タブ。左にコメント者の一覧と「事前登録…」ボタン、右に敬称・読み替え・優先度・声の設定" loading="lazy"></a>
+      <figcaption>「リスナー設定」タブ。左がコメント者の一覧で、その上に <b>[事前登録…]</b> があります。
+      右がその人の設定面です</figcaption>
     </figure></li>
   <li><b>サイトと名前を入力して登録</b><br>
     サイト（<code>twicas</code> など）を選び、常連さんの<b>名前</b>を入力して「登録」。<br>
@@ -220,15 +223,14 @@
     新規作成せずその編集画面が開きます。</small>
     <figure>
       <a href="screenshots/webinstruct/リスナー事前登録2.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/リスナー事前登録2.png" alt="事前登録の入力面。サイトと名前を入れて登録ボタンを押す" loading="lazy"></a>
-      <figcaption>サイトと名前だけで作成できる。細かい設定は次の編集画面で</figcaption>
+      <figcaption>サイトと名前だけで作成できる。細かい設定は次の編集画面で
+      <br><small>※ この 1 枚だけ v2.00 時点の画面です（入力する項目は変わっていません）</small></figcaption>
     </figure></li>
   <li><b>編集画面で敬称・読み替えなどを設定</b><br>
     登録するとそのまま編集画面が開きます。「〜さん／〜ちゃん」などの敬称、名前の読み替え、
-    優先度（1〜10）、声コマンド・歌コマンドの許可は<b>配信前でも設定できます</b>。
-    <figure>
-      <a href="screenshots/webinstruct/リスナー事前登録3.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/リスナー事前登録3.png" alt="コメント者の編集画面。敬称・読み替え・優先度・各種許可・試し読み・声の設定が並ぶ" loading="lazy"></a>
-      <figcaption>コメント者の編集画面。優先度 10 は有料アイテムと同等＝混雑時も必ず読まれる</figcaption>
-    </figure></li>
+    優先度（1〜10）、声コマンド・歌コマンドの許可は<b>配信前でも設定できます</b>
+    （設定面は上の画像の右半分です）。<br>
+    <small>※ 優先度 10 は有料アイテムと同等＝混雑時も必ず読まれます。</small></li>
   <li><b>声の割り当ては一括起動のあとで</b><br>
     待機中は声の欄が「使用不可」表示になりますが、これはエンジンがまだ起動していないだけ
     （設定は保持されます）。一括起動のあとに開き直すと声を選べるので、
@@ -256,7 +258,11 @@
     <b>「WebSocket サーバーを有効にする」</b>にチェックを入れます。</li>
   <li><b>接続情報を控える</b><br>
     同じ画面の<b>「接続情報を表示」</b>を押すと、ポート番号とパスワードが確認できます。
-    パスワードをコピーしておきます。</li>
+    パスワードをコピーしておきます。
+    <figure>
+      <a href="screenshots/webinstruct/v210screenshots/OBSsettings_obs.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/OBSsettings_obs.jpg" alt="OBS の WebSocket サーバー設定。サーバーポート 4455、認証を有効にする、サーバーパスワード" loading="lazy"></a>
+      <figcaption>OBS 側の「WebSocket サーバー設定」。ポート番号（既定 4455）とパスワードをここで確認します</figcaption>
+    </figure></li>
   <li><b>マイクにノイズゲートを入れる（推奨）</b><br>
     マイク音源の「フィルタ」に<b>ノイズゲート</b>を追加しておくと、検出の精度が上がります。
     読み分けちゃん2 は<b>フィルタ通過後の音量</b>で「話している」を判定するので、
@@ -266,7 +272,11 @@
 <h3>読み分けちゃん2 側の設定</h3>
 <ol class="steps">
   <li><b>「アプリ設定」タブで OBS 発話検出を有効にする</b><br>
-    機能を有効にし、ホスト・ポート・パスワード（さきほど控えたもの）を入力します。</li>
+    機能を有効にし、ホスト・ポート・パスワード（さきほど控えたもの）を入力します。
+    <figure>
+      <a href="screenshots/webinstruct/v210screenshots/OBSsettings.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/OBSsettings.jpg" alt="アプリ設定タブの OBS 発話検出。接続先・対象の入力名・パスワード・抑制開始までの遅延・解除までの遅延" loading="lazy"></a>
+      <figcaption>読み分けちゃん2 側の設定。<b>対象の入力名</b>は OBS でのマイク音源の名前に合わせます</figcaption>
+    </figure></li>
   <li><b>遅延を好みに合わせる</b><br>
     <b>リリース遅延</b>＝話し終えてから読み上げが再開するまでの間（既定 2 秒）、
     <b>アタック遅延</b>＝話し始めてから読み上げが止まるまでの間（既定 0 秒）。
@@ -297,7 +307,7 @@ OBS の<b>ウィンドウキャプチャ</b>で配信画面に載せれば、コ
 <!-- ============================================================ -->
 <h2 id="wip">6. まだ発展途上の項目</h2>
 
-<p>β 版として、正直にお伝えしておきます。以下は把握済みで、順に育てているところです。
+<p>正直にお伝えしておきます。以下は把握済みで、順に育てているところです。
 「ここで困った」の報告は大歓迎です。</p>
 
 <ul>
@@ -323,13 +333,19 @@ X <a href="https://x.com/yomiwakechan">@yomiwakechan</a> へお寄せくださ�
 <p>報告の際、差し支えなければ以下があると助かります：</p>
 <ul>
   <li>何をしたら・何が起きたか（起きた時刻もあると助かります）</li>
+  <li>お使いのバージョン（<b>「バージョン情報」タブ</b>で確認できます）</li>
   <li>お使いの音声エンジン（VOICEVOX / COEIROINK / AivisSpeech / 棒読みちゃん / VOICEROID2 / CeVIO AI / VOICEPEAK / Windows 標準）</li>
   <li>画面の表示やログのスクリーンショット</li>
 </ul>
 
+<figure>
+  <a href="screenshots/webinstruct/v210screenshots/vesions.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/vesions.jpg" alt="バージョン情報タブ。本体 v2.10 と、コメント取得の部品（ツイキャス WS 版・公式 API 版・YouTube）の版と作成日" loading="lazy"></a>
+  <figcaption>「バージョン情報」タブ。本体の版と、同梱のコメント取得プログラムの版が分かります</figcaption>
+</figure>
+
 <footer class="site-foot">
   <p><a href="index.html">← ホームへ戻る</a></p>
-  <p>読み分けちゃん2（先行テスター版）</p>
+  <p>読み分けちゃん2 v2.10</p>
   <p>作者（本ソフトの権利者）：X アカウント <a href="https://x.com/mugonkun">@mugonkun</a> の所有者</p>
 </footer>
 

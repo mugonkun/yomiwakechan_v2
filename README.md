@@ -3,11 +3,11 @@
 配信のコメントを、複数の声で読み分けて読み上げるツールです。
 ツイキャス・YouTube のコメント取得に対応しています。
 
-**現在、先行テスター版（β）を配布中です。**
+**最新版は v2.10 です（2026-08-27 公開）。**
 
 ## ご案内（説明書）
 
-- **[先行テスター版 ご案内ページ](https://mugonkun.github.io/yomiwakechan_v2/)** ← まずはこちら
+- **[ご案内ページ](https://mugonkun.github.io/yomiwakechan_v2/)** ← まずはこちら
   - [配信者向けガイド](https://mugonkun.github.io/yomiwakechan_v2/streamer.html)（インストール〜最初の配信まで）
   - [お歌記法ガイド](https://mugonkun.github.io/yomiwakechan_v2/song.html)（リスナー向け・インストール不要）
 
