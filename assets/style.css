@@ -358,3 +358,14 @@ th { background: var(--code-bg); }
   .hero h1 { font-size: 1.6rem; }
   h2 { font-size: 1.25rem; }
 }
+
+/* ---------- 更新のお知らせ（最新版への導線） ---------- */
+
+.update-flash {
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 20px;
+  margin: 22px 0;
+  font-size: .95rem;
+}

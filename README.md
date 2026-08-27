@@ -14,6 +14,11 @@
 ## ダウンロード
 
 - **[最新版インストーラ（Releases）](https://github.com/mugonkun/yomiwakechan_v2/releases/latest)**
+  … 最新版 **v2.10**（2026-08-27 公開）
+- **[v2.10 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew)**
+  （ツイキャス API 版・対応エンジン追加・タイムライン画面ほか）<br>
+  ⚠ アップデートされる方は、**v2.1 より前のアプリ設定は引き継がれない**点をご確認ください
+  （リスナーごとの設定は引き継がれます）。
 - 対応 OS：Windows 10 / 11（64bit）
 - 初回起動時に Windows の警告（SmartScreen）が表示されます。手順は
   [案内ページ](https://mugonkun.github.io/yomiwakechan_v2/#smartscreen)をご覧ください。
