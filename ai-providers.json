@@ -1,0 +1,162 @@
+{
+  "_readme": "AI 接続先プリセットの配布一覧。置き場と手順＝読み分けちゃん2 リポジトリの tools/publish-ai-providers.md。先頭が _ の欄はアプリが無視する（未知フィールドは無視の契約）。",
+  "v": 1,
+  "providers": [
+    {
+      "key": "gemini",
+      "displayName": "Google Gemini",
+      "tagline": "まずはこれ。無料枠で始めやすい",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "apiKeyUrl": "https://aistudio.google.com/apikey",
+      "defaultModel": "models/gemma-4-31b-it",
+      "candidates": [
+        { "id": "models/gemma-4-31b-it", "note": "推奨・無料枠が大きい" },
+        { "id": "models/gemini-3.5-flash-lite", "note": "第二推奨" }
+      ],
+      "modelNotes": [
+        { "contains": "gemma", "note": "推奨・無料枠が大きい" },
+        { "contains": "flash-lite", "note": "第二推奨" },
+        { "contains": "flash", "note": "無料枠では非推奨" }
+      ],
+      "useMaxCompletionTokens": true,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 262144,
+      "defaultName": "Gemini",
+      "defaultTriggerWords": ["Gemini", "ジェミニ"],
+      "defaultVoiceWakeWords": ["ジェミニ", "ねえジェミニ"]
+    },
+    {
+      "key": "groq",
+      "displayName": "Groq",
+      "tagline": "無料枠が大きい。速い",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "apiKeyUrl": "https://console.groq.com/keys",
+      "defaultModel": "openai/gpt-oss-120b",
+      "candidates": [
+        { "id": "openai/gpt-oss-120b", "note": "推奨" }
+      ],
+      "modelNotes": [],
+      "useMaxCompletionTokens": true,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 131072,
+      "defaultName": "Groq",
+      "defaultTriggerWords": ["Groq", "グロキュー"],
+      "defaultVoiceWakeWords": ["キューさん", "ねえキューさん"]
+    },
+    {
+      "key": "openrouter",
+      "displayName": "OpenRouter",
+      "tagline": "いろんなモデルの相乗り口",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "apiKeyUrl": "https://openrouter.ai/keys",
+      "defaultModel": "",
+      "candidates": [],
+      "modelNotes": [],
+      "useMaxCompletionTokens": false,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 0,
+      "defaultName": "OpenRouter",
+      "defaultTriggerWords": ["OpenRouter", "オープンルーター"],
+      "defaultVoiceWakeWords": ["オープンルーター", "ねえオープンルーター"]
+    },
+    {
+      "key": "deepseek",
+      "displayName": "DeepSeek",
+      "tagline": "日本の夜は割引時間帯",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "apiKeyUrl": "https://platform.deepseek.com/api_keys",
+      "defaultModel": "deepseek-v4-flash",
+      "candidates": [
+        { "id": "deepseek-v4-flash", "note": "推奨" },
+        { "id": "deepseek-v4-pro", "note": "" }
+      ],
+      "modelNotes": [],
+      "useMaxCompletionTokens": false,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 1000000,
+      "defaultName": "DeepSeek",
+      "defaultTriggerWords": ["DeepSeek", "ディープシーク"],
+      "defaultVoiceWakeWords": ["ディープシーク", "ねえディープシーク"]
+    },
+    {
+      "key": "openai",
+      "displayName": "OpenAI",
+      "tagline": "定番。有料",
+      "baseUrl": "https://api.openai.com/v1",
+      "apiKeyUrl": "https://platform.openai.com/api-keys",
+      "defaultModel": "gpt-5-mini",
+      "candidates": [
+        { "id": "gpt-5-mini", "note": "推奨" }
+      ],
+      "modelNotes": [],
+      "useMaxCompletionTokens": true,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 272000,
+      "defaultName": "チャッピー",
+      "defaultTriggerWords": ["チャッピー", "ChatGPT"],
+      "defaultVoiceWakeWords": ["チャッピーさん", "ねえチャッピーさん"]
+    },
+    {
+      "key": "anthropic",
+      "displayName": "Anthropic Claude",
+      "tagline": "Claude。丁寧な日本語",
+      "baseUrl": "https://api.anthropic.com/v1",
+      "apiKeyUrl": "https://console.anthropic.com/settings/keys",
+      "defaultModel": "claude-haiku-4-5",
+      "candidates": [
+        { "id": "claude-haiku-4-5", "note": "推奨" },
+        { "id": "claude-sonnet-5", "note": "" },
+        { "id": "claude-opus-5", "note": "" }
+      ],
+      "modelNotes": [],
+      "useMaxCompletionTokens": true,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 200000,
+      "defaultName": "Claude",
+      "defaultTriggerWords": ["Claude", "クロード"],
+      "defaultVoiceWakeWords": ["クロードさん", "ねえクロードさん"]
+    },
+    {
+      "key": "xai",
+      "displayName": "xAI Grok",
+      "tagline": "⚠ クセあり・有料。普通の AI じゃないよ！",
+      "baseUrl": "https://api.x.ai/v1",
+      "apiKeyUrl": "https://console.x.ai/",
+      "defaultModel": "grok-4.20-non-reasoning",
+      "candidates": [
+        { "id": "grok-4.20-non-reasoning", "note": "推奨・非推論＝安い" }
+      ],
+      "modelNotes": [],
+      "useMaxCompletionTokens": true,
+      "requiresKey": true,
+      "isLocal": false,
+      "defaultContextLength": 1000000,
+      "defaultName": "Grok",
+      "defaultTriggerWords": ["Grok", "グロック"],
+      "defaultVoiceWakeWords": ["グロック", "ねえグロック"]
+    },
+    {
+      "key": "local",
+      "displayName": "ローカル（OpenAI 互換サーバー）",
+      "tagline": "手元の箱に接続。外部送信なし",
+      "baseUrl": "http://127.0.0.1:1234/v1",
+      "apiKeyUrl": "",
+      "defaultModel": "",
+      "candidates": [],
+      "modelNotes": [],
+      "useMaxCompletionTokens": false,
+      "requiresKey": false,
+      "isLocal": true,
+      "defaultContextLength": 8192,
+      "defaultName": "アシスタントちゃん",
+      "defaultTriggerWords": ["アシスタントちゃん"],
+      "defaultVoiceWakeWords": ["アシスタントちゃん", "ねえアシスタントちゃん"]
+    }
+  ]
+}
