@@ -23,16 +23,15 @@
   <h1>読み分けちゃん2</h1>
   <p class="tagline">いつものリスナーに、いつもの声を。</p>
   <div class="hero-shots">
-    <a href="screenshots/webinstruct/v210screenshots/timeline.png" target="_blank" rel="noopener">
-      <img src="screenshots/webinstruct/v210screenshots/timeline.png" alt="稼働中のタイムライン画面。中央にコメントが流れ、ピンクの帯にいま読んでいるコメントが乗っている" loading="lazy">
+    <a href="screenshots/webinstruct/v213screenshots/timeline.png" target="_blank" rel="noopener">
+      <img src="screenshots/webinstruct/v213screenshots/timeline.png" alt="稼働中のタイムラインタブ（v2.13）。上部の帯に [一括起動して受信開始]・[受信開始]・[再スキャン]、4 段目に「字幕」チェック、3 段目にツイキャスと YouTube の配信プラットフォーム情報。中央のレーンにコメントが流れ、緑の枠にいま読んでいるコメントが乗っている" loading="lazy">
     </a>
     <a href="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" target="_blank" rel="noopener">
       <img src="screenshots/webinstruct/v210screenshots/voiceprofile.jpg" alt="リスナー設定タブ。左にコメント者の一覧、右に敬称・読み替え・優先度・声の割り当て" loading="lazy">
     </a>
   </div>
-  <!-- 写真（司令官が用意・差し替え候補）: screenshots/webinstruct/v213screenshots/timeline.png ＝ v2.13 稼働中のタイムライン（帯の [一括起動して受信開始][受信開始][再スキャン]・「字幕」✓が写るもの）→ 上の左の 1 枚と差し替え -->
-  <p class="hero-shots-note">稼働中のタイムライン画面と、リスナーごとの設定画面（クリックで拡大。画像は v2.10 時点＝v2.13 では上部の帯が
-  [一括起動して受信開始]・[受信開始]・[再スキャン] の 3 つになり、「字幕」チェックと新しいタブ 3 枚が増えています）</p>
+  <p class="hero-shots-note">稼働中のタイムライン画面（v2.13）と、リスナーごとの設定画面（クリックで拡大。右の画像は v2.10 時点＝v2.13 では左上に
+  [名前読み上げ設定]・[未登録者読み上げ設定] が並び、AI の許可✓が「AI(低)許可」「AI(高)許可」の 2 個になっています）</p>
   <div class="thanks">
     <p>読み分けちゃん2 は、<b>実際の配信で使いながら育ててきたツール</b>です。
     使ってくださっている皆さんの「こうだったら嬉しい」を取り込みながら、いまも磨き続けています。
@@ -216,17 +215,41 @@
 
 <h3>画面で見る v2.13</h3>
 
-<!-- 写真（司令官が用意・順に差し込み）:
-     ① screenshots/webinstruct/v213screenshots/timeline.png     ＝ タイムラインタブ稼働中（帯の 3 ボタン・「字幕」✓・配信プラットフォーム情報の枠）
-     ② screenshots/webinstruct/v213screenshots/onecomme.png     ＝ わんコメ連携タブ（元栓✓・送出先の枠・テスト送信・使い方の注意）
-     ③ screenshots/webinstruct/v213screenshots/ai-tab.png       ＝ AI連携タブ全景（帯＋一覧＋編集面。LM Studio のローカル設定）
-     ④ screenshots/webinstruct/v213screenshots/asr.png          ＝ 音声認識タブ（元栓✓・モデル・マイク・状態と認識結果）
-     ⑤ screenshots/webinstruct/v213screenshots/bulklaunch.png   ＝ 一括起動設定タブ（最上段の「起動時に一括起動する」・連携アプリ段）
-     ⑥ screenshots/webinstruct/v213screenshots/versions.png     ＝ バージョン情報タブ（本体の [更新を確認]・コメント取得プログラムの [更新]）
-     各写真の figure は下の既存 figure と同じ型で差し込む。 -->
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/timeline.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/timeline.png" alt="稼働中のタイムラインタブ（v2.13）。上部の帯に [一括起動して受信開始]・[受信開始]・[再スキャン]、4 段目に「字幕」チェック、3 段目にツイキャスと YouTube の配信プラットフォーム情報。中央のレーンにコメントが流れ、緑の枠にいま読んでいるコメントが乗っている" loading="lazy"></a>
+  <figcaption>稼働中のタイムラインタブ。上部の帯が <b>[一括起動して受信開始]</b>・<b>[受信開始]</b>・<b>[再スキャン]</b> の 3 つになり、
+  「字幕」チェックが加わりました。3 段目の配信プラットフォーム情報は、左端の縦線をつまんで別ウィンドウに出せます（画像はクリックで原寸表示）</figcaption>
+</figure>
 
-<p class="soft"><small>※ v2.13 の新しい画面（わんコメ連携・AI連携・音声認識・一括起動設定・バージョン情報）の写真は準備中です。
-下の写真は v2.10 時点のものです（機能の位置づけは v2.13 でも同じですが、一部の項目名・並びが変わっています）。</small></p>
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/onecomme.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/onecomme.png" alt="わんコメ連携タブ。「わんコメ連携を有効にする」と「スキップしたコメントも送出する」のチェック、接続先ホストとポート、送出先の枠と [枠一覧を取得]、テスト文言と [テスト送信]、使い方の注意とわんコメ側の枠一覧のトグルの画像" loading="lazy"></a>
+  <figcaption>わんコメ連携タブ。元栓のチェックと送出先の枠、[テスト送信]、使い方の注意（わんコメ側の枠一覧で「書き出し」を ON にする）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/ai-tab.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/ai-tab.png" alt="AI連携タブ。上の帯に「AI連携を使用する」と「同意して使用する」のチェック、配信者の名前とトークン数。左に AI の一覧（めうちゃん・Gemini 2・Grok）、右に接続先ローカル（127.0.0.1:1234・モデル openai/gpt-oss-20b）の接続設定と会話の設定" loading="lazy"></a>
+  <figcaption>AI連携タブ。上の帯で「同意して使用する」にチェックを入れると、下の AI の一覧と設定が使えます。
+  画像はローカル LLM（LM Studio・gpt-oss-20b）に接続した状態＝API キーは空のままです</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/asr.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/asr.png" alt="音声認識タブ。「音声認識を使用する」のチェック、モデルフォルダと [モデルをダウンロード]、マイクの選択、「認識したテキストをタイムラインに表示する」、状態と認識結果の欄に「認識中」" loading="lazy"></a>
+  <figcaption>音声認識タブ。元栓を入れ、初回だけモデルをダウンロードし、マイクを選べば「認識中」になります（外部には送りません）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/bulklaunch.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/bulklaunch.png" alt="一括起動設定タブ。最上段に「起動時に一括起動する」のチェック、起動方式（インターバル起動）、連携アプリの段にわんコメと OBS Studio、エンジンの段に VOICEROID2・VOICEVOX・COEIROINK・AivisSpeech・irodori-TTS-for-yomiwakechan・CeVIO AI・棒読みちゃん・Irodori-TTS-Server のチェックと実行ファイルのパス" loading="lazy"></a>
+  <figcaption>一括起動設定タブ。最上段の「起動時に一括起動する」（既定オフ）、連携アプリの段にわんコメと OBS Studio、
+  その下にエンジンの一覧（irodori-tts 系も並びます）</figcaption>
+</figure>
+
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/versions.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/versions.png" alt="バージョン情報タブ。本体 v2.13 と [更新を確認]、コメント取得の部品の一覧（ツイキャス WS 版 0.96.12・公式 API 0.96.16・YouTube 0.96.03 と、開発用のシナリオ再生）にそれぞれ [更新]" loading="lazy"></a>
+  <figcaption>バージョン情報タブ。本体の <b>[更新を確認]</b> と、コメント取得の部品ごとの <b>[更新]</b>
+  （一番上の「シナリオ再生」は開発用の部品で、配布版には出ません）</figcaption>
+</figure>
+
+<p class="soft"><small>※ 以下の 3 枚は v2.10 時点の写真です（機能の位置づけは v2.13 でも同じですが、一部の項目名・並びが変わっています）。</small></p>
 
 <figure>
   <a href="screenshots/webinstruct/v210screenshots/status.jpg" target="_blank" rel="noopener">
