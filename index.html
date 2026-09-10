@@ -56,7 +56,9 @@
 （<a href="#background">開発の背景</a>）。</p>
 
 <p class="update-flash"><b>2026-09-10、v2.13 を公開しました。</b>
-わんコメ連携・AI連携・音声認識・新しい声（irodori-tts 系）・起動の手順の変更など、
+<b>新エンジン「irodori-TTS-for-yomiwakechan」に対応</b>——感情や演技指示で声色を作れる irodori-tts を、
+Python の環境構築なしで配信の声にできます（<a href="https://github.com/mugonkun/irodori-tts-for-yomiwakechan/releases/latest">配布ページ</a>で入手・GPU 推奨）。
+ほかに わんコメ連携・AI連携・音声認識・起動の手順の変更など、
 前回配布版（v2.10）からの追加機能は <a href="#whatsnew">v2.13 の更新内容</a>をご覧ください。
 <b>v2.10 からのアップデートは上書きインストールで、設定はそのまま引き継がれます</b>
 （今回はインストーラを実行してください。v2.13 以降は、次の版からアプリ内の「バージョン情報」タブの [更新を確認] でも更新できます）。</p>
@@ -124,9 +126,9 @@
         <small>多彩な声・お歌機能をフルに使うには VOICEVOX の導入をお勧めします（別途インストール・後からでも OK）</small></li>
       <li>COEIROINK / AivisSpeech（いずれも無料）</li>
       <li>棒読みちゃん（無料）</li>
-      <li><b>irodori-tts 系（v2.13 で追加・GPU 推奨）</b>：感情や演技指示のできる声。
-        Irodori-TTS-Server（コマンドライン導入）が必要です。導入を簡単にした配布版
-        （irodori-TTS-for-yomiwakechan）は近日公開予定です<br>
+      <li><b>irodori-TTS-for-yomiwakechan（v2.13 で追加・GPU 推奨）</b>：感情や演技指示のできる声。
+        <a href="https://github.com/mugonkun/irodori-tts-for-yomiwakechan/releases/latest">配布ページ</a>のインストーラで導入します（CUDA 版／Radeon 版）。
+        Irodori-TTS-Server（コマンドライン導入）をお使いの方はそのまま使えます<br>
         <small>GPU（GeForce RTX シリーズ／Radeon）推奨。CPU でも動作し実配信でも使えますが、実用的ではありません
         （<a href="streamer.html#irodori">ガイド 10 章</a>）</small></li>
       <li>VOICEROID2 / CeVIO AI / VOICEPEAK（各製品のライセンスをお持ちの方のみ）<br>
@@ -178,6 +180,11 @@
 </div>
 
 <ul class="feature-grid">
+  <li><b>🎨 新エンジン「irodori-TTS-for-yomiwakechan」に対応</b>感情や演技指示（自由文のプロンプト）で声色を作れる
+    音声合成 irodori-tts を、<b>Python の環境構築なしで配信の声にできます</b>。<a href="https://github.com/mugonkun/irodori-tts-for-yomiwakechan/releases/latest">配布ページ</a>の
+    インストーラ（CUDA 版／Radeon 版）を入れれば、読み分けちゃん2 が自動で見つけて一括起動の席に並びます。
+    参照音声・シード・「シード値を生成して試し読み」で好みの声を作れます。GPU 推奨（<a href="streamer.html#irodori">導入と注意</a>）。
+    Irodori-TTS-Server（コマンドライン導入）にも対応しています</li>
   <li><b>🗨 わんコメ連携（読み上げ同期送出）</b>読み上げの開始にあわせて、そのコメントをわんコメへ送ります。
     OBS のシーン・テンプレート・WordParty など<b>わんコメ側の資産はそのまま</b>に、読み上げだけ読み分けちゃん2 に
     差し替えられます。読んでいるコメントがそのとき画面に出るのが特徴です
@@ -190,9 +197,6 @@
   <li><b>🎤 音声認識（マイクの声を PC の中で文字に）</b>配信者の声をローカルで文字にして、
     AI への呼びかけとタイムラインの字幕に使います。外部には送りません・API キーも不要です
     （<a href="streamer.html#asr">音声認識の設定</a>）</li>
-  <li><b>🎨 新しい声：irodori-tts 系</b>感情や演技指示（自由文のプロンプト）で声色を作れる音声合成に対応しました。
-    Irodori-TTS-Server（コマンドライン導入）に対応。導入を簡単にした配布版（irodori-TTS-for-yomiwakechan）は
-    近日公開予定です。GPU 推奨です（<a href="streamer.html#irodori">導入と注意</a>）</li>
   <li><b>🚀 起動の手順が変わりました</b>起動するとスキャンが自動で走って「準備完了」になり、声や特殊読み上げの設定は
     <b>受信を始める前から</b>開けます。受信は <b>[受信開始]</b> から。エンジンを後から起動したら <b>[再スキャン]</b>
     で取り直せます（受信中でも可）。毎回同じ構成で配信する方は、一括起動設定の<b>「起動時に一括起動する」</b>
