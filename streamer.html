@@ -118,12 +118,10 @@
       （ツイキャスの右のドロップダウンで公式 API 版／WS 版を切り替えます）</figcaption>
     </figure>
     <figure>
-      <a href="screenshots/webinstruct/v210screenshots/startupsetting.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/startupsetting.jpg" alt="一括起動設定タブ（v2.10 時点の名称は読み上げアプリ起動設定）。VOICEROID2・VOICEVOX・COEIROINK・AivisSpeech・CeVIO AI・棒読みちゃんのチェックと実行ファイルのパス" loading="lazy"></a>
-      <figcaption>「一括起動設定」タブ。使うエンジンにチェックを入れておくと、
-      一括起動でまとめて立ち上がります（画像は v2.10 時点＝当時の名称「読み上げアプリ起動設定」。
-      v2.13 では最上段に「起動時に一括起動する」、連携アプリの段に OBS Studio・わんコメが並びます）</figcaption>
-    </figure>
-    <!-- 写真⑤（司令官が用意）: screenshots/webinstruct/v213screenshots/bulklaunch.png ＝ 一括起動設定タブ（最上段の✓と連携アプリ段）→ 上の figure と差し替え --></li>
+      <a href="screenshots/webinstruct/v213screenshots/bulklaunch.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/bulklaunch.png" alt="一括起動設定タブ。最上段に「起動時に一括起動する」のチェック、起動方式（インターバル起動）、連携アプリの段にわんコメと OBS Studio、エンジンの段に VOICEROID2・VOICEVOX・COEIROINK・AivisSpeech・irodori-TTS-for-yomiwakechan・CeVIO AI・棒読みちゃん・Irodori-TTS-Server のチェックと実行ファイルのパス" loading="lazy"></a>
+      <figcaption>「一括起動設定」タブ。使うエンジンにチェックを入れておくと、一括起動でまとめて立ち上がります。
+      最上段の「起動時に一括起動する」（既定オフ）と、連携アプリの段の わんコメ・OBS Studio は v2.13 で加わりました</figcaption>
+    </figure></li>
   <li><b>タイムラインタブの [受信開始]（一括起動する方は [一括起動して受信開始]）を押す</b><br>
     上部の帯に <b>[一括起動して受信開始]</b>・<b>[受信開始]</b>・<b>[再スキャン]</b> の 3 つのボタンがあります。<br>
     <b>[一括起動して受信開始]</b>：一括起動設定でチェックした音声エンジン・連携アプリを起こし、スキャンし直してから
@@ -143,16 +141,16 @@
       <figcaption>受信を始める前のタイムラインタブ。左上の<b>[一括起動して受信開始]</b> が本番のスイッチです
       （画像は v2.10 時点。v2.13 ではその右に <b>[受信開始]</b> と <b>[再スキャン]</b> が並びます）</figcaption>
     </figure>
-    <!-- 写真①（司令官が用意）: screenshots/webinstruct/v213screenshots/timeline-ready.png ＝ 準備完了のタイムラインタブ（帯の 3 ボタンと状態欄「準備完了（受信を開始していません）」）→ 上の figure と差し替え --></li>
+</li>
   <li><b>テストコメントで動作確認</b><br>
     配信を開始し、自分のスマホなどからコメントを送ってみてください。
     コメントが声になって聞こえたら OK です。
     タイムラインにコメントが流れ始め、いま読んでいるコメントが分かるようになります。<br>
     <small>※ 読み上げ・スキップ・有料累計などの統計は<b>「ステータス」タブ</b>で見られます。</small>
     <figure>
-      <a href="screenshots/webinstruct/v210screenshots/timeline.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/timeline.png" alt="稼働中のタイムラインタブ。中央にコメントが流れ、ピンクの帯にいま読んでいるコメントが乗っている" loading="lazy"></a>
-      <figcaption>稼働中のタイムライン。中央の帯（Currently）が「いま読んでいるところ」で、
-      その上が未読、下が読み終わったコメントです（画像は v2.10 時点。v2.13 では上部の帯が 3 ボタンになり、「字幕」チェックが加わっています）</figcaption>
+      <a href="screenshots/webinstruct/v213screenshots/timeline.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/timeline.png" alt="稼働中のタイムラインタブ（v2.13）。上部の帯に [一括起動して受信開始]・[受信開始]・[再スキャン]、4 段目に「字幕」チェック、3 段目にツイキャスと YouTube の配信プラットフォーム情報。中央のレーンにコメントが流れ、緑の枠にいま読んでいるコメントが乗っている" loading="lazy"></a>
+      <figcaption>稼働中のタイムライン（v2.13）。中央の緑の枠（Reading）が「いま読んでいるところ」で、
+      その上が未読、下が読み終わったコメントです。3 段目の配信プラットフォーム情報のカードが「受信中」になっています</figcaption>
     </figure>
     <figure>
       <a href="screenshots/webinstruct/v210screenshots/status.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/status.jpg" alt="ステータスタブ。稼働状態・読み上げ統計・エンジンスキャン結果・ログが表示されている" loading="lazy"></a>
@@ -398,8 +396,11 @@ OBS の<b>ウィンドウキャプチャ</b>で配信画面に載せれば、コ
     テスト文言を入れて <b>[テスト送信]</b>。わんコメ側の枠に表示されれば完了です。</li>
 </ol>
 
-<!-- 写真②（司令官が用意）: screenshots/webinstruct/v213screenshots/onecomme.png ＝ わんコメ連携タブ（元栓✓・送出先の枠・テスト送信・使い方の注意）／
-     写真②-b: わんコメ側の枠一覧の「書き出し」トグル（人が写る枠名は司令官の裁定） -->
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/onecomme.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/onecomme.png" alt="わんコメ連携タブ。「わんコメ連携を有効にする」と「スキップしたコメントも送出する」のチェック、接続先ホストとポート、送出先の枠と [枠一覧を取得]、テスト文言と [テスト送信]、使い方の注意とわんコメ側の枠一覧のトグルの画像" loading="lazy"></a>
+  <figcaption>「わんコメ連携」タブ。上から連携設定（元栓・送出先の枠）、接続状態（[テスト送信]）、使い方の注意。
+  注意の中の画像が、わんコメ側の枠一覧で「書き出し」を ON にした状態です</figcaption>
+</figure>
 
 <div class="warn">
   <span class="warn-title">⚠ 使い方の注意（アプリ内の表示と同じ内容）</span>
@@ -459,9 +460,12 @@ AI は<b>何体でも作れて同時に動きます</b>。AI ごとに接続先�
     あとは発火ワード・キャラ設定・声を決めれば、コメントで呼びかけて試せます。</li>
 </ol>
 
-<!-- 写真③（司令官が用意）: screenshots/webinstruct/v213screenshots/ai-tab.png ＝ AI連携タブ全景（帯＋一覧＋編集面・ローカル接続の設定）／
-     写真③-b: LM Studio の Developer（サーバー）画面（c:\yomiwakesozai\lmstudio-guide\01-server）／
-     写真③-c: タイムラインの AI 回答タイル（05）＝人が写るものは司令官の裁定 -->
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/ai-tab.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/ai-tab.png" alt="AI連携タブ。上の帯に「AI連携を使用する」と「同意して使用する」のチェック、配信者の名前とトークン数。左に AI の一覧（めうちゃん・Gemini 2・Grok）、右に接続先ローカル（127.0.0.1:1234・モデル openai/gpt-oss-20b）の接続設定と会話の設定" loading="lazy"></a>
+  <figcaption>「AI連携」タブ。左の一覧で AI を選び、右の「AI接続設定」で接続先をローカル（<code>http://127.0.0.1:1234/v1</code>）にして
+  [モデル一覧を取得] → モデルを選ぶ → [接続テスト]。成功するとコンテキスト長が自動で入ります（画像では 69376）。
+  発火ワード・キャラ設定・声は「基本と人格設定」「声の設定」のタブで決めます</figcaption>
+</figure>
 
 <p class="soft"><small>参考（作者の環境・Ryzen AI MAX+ 395／Radeon 8060S／RAM 64GB・gpt-oss-20b）：接続テスト 1.4 秒、
 質問から回答まで 1.9 秒（39 字）。会話が満杯になっても 1.4〜2.8 秒で頭打ちでした。クラウドの既定モデルは思考時間込みで
@@ -529,7 +533,11 @@ AI は<b>何体でも作れて同時に動きます</b>。AI ごとに接続先�
     タイムラインの下端にも字幕として出ます（途中は薄い色、確定で通常の色、確定から数秒で消えます）。</li>
 </ol>
 
-<!-- 写真④（司令官が用意）: screenshots/webinstruct/v213screenshots/asr.png ＝ 音声認識タブ（元栓✓・モデル・マイク・状態と認識結果） -->
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/asr.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/asr.png" alt="音声認識タブ。「音声認識を使用する」のチェック、モデルフォルダと [モデルをダウンロード]、マイクの選択、「認識したテキストをタイムラインに表示する」、状態と認識結果の欄に「認識中」" loading="lazy"></a>
+  <figcaption>「音声認識」タブ。元栓のチェック、モデルフォルダ（初回は [モデルをダウンロード]）、マイクの選択、
+  タイムラインへの表示チェック。下の「状態と認識結果」が「認識中」なら動いています</figcaption>
+</figure>
 
 <div class="note">
   <span class="note-title">💡 AI を声で呼ぶ</span>
@@ -557,7 +565,11 @@ Silero VAD（MIT License）を使用しています。各ライセンスの全�
     違えば差し替えます。起動中の個体は止めて差し替え、差し替えられなければ次回起動時に適用します（再起動を案内します）。</li>
 </ol>
 
-<!-- 写真⑥（司令官が用意）: screenshots/webinstruct/v213screenshots/versions.png ＝ バージョン情報タブ（本体の [更新を確認]・部品の一覧と [更新]） -->
+<figure>
+  <a href="screenshots/webinstruct/v213screenshots/versions.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/versions.png" alt="バージョン情報タブ。本体 v2.13 と [更新を確認]、コメント取得の部品の一覧（ツイキャス WS 版 0.96.12・公式 API 0.96.16・YouTube 0.96.03 と、開発用のシナリオ再生）にそれぞれ [更新]" loading="lazy"></a>
+  <figcaption>「バージョン情報」タブ。本体の [更新を確認] と、コメント取得の部品ごとの [更新]
+  （一番上の「シナリオ再生」は開発用の部品で、配布版には出ません）</figcaption>
+</figure>
 
 <div class="note">
   <span class="note-title">💡 覚えておくこと</span>
@@ -648,9 +660,8 @@ X <a href="https://x.com/yomiwakechan">@yomiwakechan</a> へお寄せくださ�
 </ul>
 
 <figure>
-  <a href="screenshots/webinstruct/v210screenshots/vesions.jpg" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v210screenshots/vesions.jpg" alt="バージョン情報タブ（v2.10 時点）。本体と、コメント取得の部品（ツイキャス WS 版・公式 API 版・YouTube）の版と作成日" loading="lazy"></a>
-  <figcaption>「バージョン情報」タブ。本体の版と、同梱のコメント取得プログラムの版が分かります
-  （画像は v2.10 時点。v2.13 では本体の [更新を確認] と部品ごとの [更新] が並びます）</figcaption>
+  <a href="screenshots/webinstruct/v213screenshots/versions.png" target="_blank" rel="noopener"><img src="screenshots/webinstruct/v213screenshots/versions.png" alt="バージョン情報タブ。本体 v2.13 と [更新を確認]、コメント取得の部品の一覧（ツイキャス WS 版 0.96.12・公式 API 0.96.16・YouTube 0.96.03 と、開発用のシナリオ再生）にそれぞれ [更新]" loading="lazy"></a>
+  <figcaption>「バージョン情報」タブ。本体の版と、同梱のコメント取得プログラムの版が分かります</figcaption>
 </figure>
 
 <footer class="site-foot">
