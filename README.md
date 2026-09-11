@@ -17,7 +17,7 @@
   … 最新版 **v2.13**（2026-09-10 公開）
 - **[v2.13 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew)**
   （**新エンジン irodori-TTS-for-yomiwakechan に対応**・わんコメ連携・AI連携・音声認識・起動の手順の変更・アプリ内更新ほか）<br>
-  - irodori-TTS-for-yomiwakechan の配布ページ：https://github.com/mugonkun/irodori-tts-for-yomiwakechan/releases/latest
+  - irodori-TTS-for-yomiwakechan の配布ページ：https://mugonkun.github.io/irodori-tts-for-yomiwakechan/
   v2.10 からのアップデートは上書きインストールで、**設定はそのまま引き継がれます**。
   起動の手順が変わり、コメントの取得は [受信開始] を押してから始まります。
 - 対応 OS：Windows 10 / 11（64bit）
