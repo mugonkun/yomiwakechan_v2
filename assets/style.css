@@ -7,6 +7,7 @@
   --text-soft: #6b675f;
   --accent: #c2571d;        /* 暖色系（読み上げ＝声の温度感） */
   --accent-soft: #fdeee3;
+  --accent-text: #ffffff;   /* accent 地の上の文字（ダークでは濃色＝コントラスト確保） */
   --line: #e6e1d8;
   --badge-bg: #fff3e0;
   --badge-text: #a34a15;
@@ -24,6 +25,7 @@
     --text-soft: #a8a299;
     --accent: #e87a45;
     --accent-soft: #3a2a1e;
+    --accent-text: #1d1b18;
     --line: #3a362f;
     --badge-bg: #3a2a1e;
     --badge-text: #f0a878;
@@ -132,7 +134,7 @@ body {
   .hero-shots { grid-template-columns: 1fr; }
 }
 
-.hero .thanks {
+.thanks {
   max-width: 620px;
   margin: 22px auto 0;
   text-align: left;
@@ -141,6 +143,22 @@ body {
   padding: 18px 24px;
   font-size: .95rem;
 }
+
+.hero-lead {
+  max-width: 620px;
+  margin: 10px auto 0;
+  font-size: 1.05rem;
+}
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0;
+}
+.hero-links .dl-button { padding: 12px 32px; font-size: 1.05rem; }
+.hero-guide { font-weight: 700; }
 
 /* ---------- 見出し・本文 ---------- */
 
@@ -237,7 +255,7 @@ a.card:hover {
   margin: 0;
   font-size: .95rem;
 }
-.feature-grid li b { display: block; margin-bottom: 2px; }
+.feature-grid li > b:first-child { display: block; margin-bottom: 2px; }  /* 見出しの b だけ段にする（本文中の b は行内のまま） */
 
 /* ---------- ダウンロードボタン ---------- */
 
@@ -246,7 +264,7 @@ a.card:hover {
 .dl-button {
   display: inline-block;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-text);
   font-size: 1.15rem;
   font-weight: 700;
   text-decoration: none;
@@ -295,7 +313,7 @@ ol.steps > li::before {
   width: 34px; height: 34px;
   border-radius: 50%;
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-text);
   font-weight: 700;
   display: flex;
   align-items: center;
