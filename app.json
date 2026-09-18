@@ -3,8 +3,8 @@
   "pageUrl": "https://mugonkun.github.io/yomiwakechan_v2/",
   "note": null,
   "v": 1,
-  "version": "v2.16a",
-  "builtAt": "2026-09-14T01:26:06Z",
-  "sha256": "d2941839d10df889396a94ccbc44f1dbea90d94c5eeca8d734ae57334fd885e3",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.16a/yomiwakechan2-setup-v2.16a.exe"
+  "version": "v2.16b",
+  "builtAt": "2026-09-18T07:24:17Z",
+  "sha256": "d5b437973885053cfb338365b82dc7ad25e7e3b8791c111ca49c12e146ba0776",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.16b/yomiwakechan2-setup-v2.16b.exe"
 }
