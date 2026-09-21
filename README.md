@@ -3,7 +3,7 @@
 配信のコメントを、複数の声で読み分けて読み上げるツールです。
 ツイキャス・YouTube のコメント取得に対応しています。
 
-**最新版は v2.17a です（2026-09-19 公開）。**
+**最新版は v2.18 です（2026-09-21 公開）。**
 
 ## ご案内（説明書）
 
@@ -14,7 +14,7 @@
 ## ダウンロード
 
 - **[最新版インストーラ（Releases）](https://github.com/mugonkun/yomiwakechan_v2/releases/latest)**
-  … 最新版 **v2.17a**（2026-09-19 公開）
+  … 最新版 **v2.18**（2026-09-21 公開）
 - **[v2.16／v2.15 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew)**（配信プラットフォーム情報の行にテロップ更新・コメント投稿が収まった／シャウトの反応条件の拡張・配信プラットフォーム情報の 1 行表示と絞り込み）／[v2.14](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v214)・[v2.13 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v213)
   （**新エンジン irodori-TTS-for-yomiwakechan に対応**・わんコメ連携・AI連携・音声認識・起動の手順の変更・アプリ内更新ほか）<br>
   - irodori-TTS-for-yomiwakechan の配布ページ：https://mugonkun.github.io/irodori-tts-for-yomiwakechan/
