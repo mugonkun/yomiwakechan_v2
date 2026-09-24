@@ -2,11 +2,6 @@
   "name": "yomiwakechan2",
   "pageUrl": "https://mugonkun.github.io/yomiwakechan_v2/",
   "note": null,
-  "bugReport": {
-    "endpoint": "https://discord.com/api/webhooks/1552663942612914206/AGDdCtcvkOU24vWIdlheBEWXtFXa9fvpw6HYEo4TvrgDQopATazEJXxy6gBLMIMoMM49",
-    "maxBytes": 8000000,
-    "note": "不具合報告の送り先（開発者の Discord・専用チャンネル）"
-  },
   "v": 1,
   "version": "v2.18a",
   "builtAt": "2026-09-24T13:10:02Z",
