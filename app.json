@@ -2,14 +2,14 @@
   "name": "yomiwakechan2",
   "pageUrl": "https://mugonkun.github.io/yomiwakechan_v2/",
   "note": null,
-  "v": 1,
-  "version": "v2.18",
-  "builtAt": "2026-09-21T10:56:09Z",
-  "sha256": "5a9dd2f5a056dbeafa093c6419c77c74235f50b0fa74b3d13f61a1892bfc658f",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.18/yomiwakechan2-setup-v2.18.exe",
   "bugReport": {
     "endpoint": "https://discord.com/api/webhooks/1552663942612914206/AGDdCtcvkOU24vWIdlheBEWXtFXa9fvpw6HYEo4TvrgDQopATazEJXxy6gBLMIMoMM49",
     "maxBytes": 8000000,
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル）"
-  }
-}
+  },
+  "v": 1,
+  "version": "v2.18a",
+  "builtAt": "2026-09-24T13:10:02Z",
+  "sha256": "74c4754ad74001fc5efa83568c671e8891dd33cfcaab10e11f8656c26a6238ca",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.18a/yomiwakechan2-setup-v2.18a.exe"
+}
