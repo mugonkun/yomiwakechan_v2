@@ -1,15 +1,15 @@
 {
   "name": "yomiwakechan2",
   "pageUrl": "https://mugonkun.github.io/yomiwakechan_v2/",
-  "note": null,
   "bugReport": {
     "endpoint": "https://ywk-bug-report.mugonkun.workers.dev/report",
     "maxBytes": 8000000,
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.19",
-  "builtAt": "2026-10-05T00:21:14Z",
-  "sha256": "27b1de80530a09dac51125596b4af2a1fc6486da1b3c6f6a5df6053646c93545",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.19/yomiwakechan2-setup-v2.19.exe"
+  "version": "v2.19a",
+  "builtAt": "2026-10-05T01:27:55Z",
+  "sha256": "97de918ee82e9fa2634639deed1f26284315b31e350446a75708d6e0e0b7d3c3",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.19a/yomiwakechan2-setup-v2.19a.exe",
+  "note": "シャウトが 3 段（挨拶系／お礼系／その他長文系）になりました。これまでの「シャウト」は挨拶系、「長いシャウト」はその他長文系として引き継がれます。\n起動時の更新のお知らせに、この「更新の概要」が出るようになりました。"
 }
