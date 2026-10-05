@@ -8,8 +8,8 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.18c",
-  "builtAt": "2026-09-28T06:19:13Z",
-  "sha256": "ac49da07eb792aa3ea85ed4209186a1e5682cc3dd3d24f0c458ecda80db94204",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.18c/yomiwakechan2-setup-v2.18c.exe"
+  "version": "v2.19",
+  "builtAt": "2026-10-05T00:21:14Z",
+  "sha256": "27b1de80530a09dac51125596b4af2a1fc6486da1b3c6f6a5df6053646c93545",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.19/yomiwakechan2-setup-v2.19.exe"
 }
