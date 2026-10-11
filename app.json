@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.19a",
-  "builtAt": "2026-10-05T01:27:55Z",
-  "sha256": "97de918ee82e9fa2634639deed1f26284315b31e350446a75708d6e0e0b7d3c3",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.19a/yomiwakechan2-setup-v2.19a.exe",
-  "note": "シャウトが 3 段（挨拶系／お礼系／その他長文系）になりました。これまでの「シャウト」は挨拶系、「長いシャウト」はその他長文系として引き継がれます。\n起動時の更新のお知らせに、この「更新の概要」が出るようになりました。"
+  "version": "v2.20",
+  "builtAt": "2026-10-11T10:27:30Z",
+  "sha256": "a33095fc66dd7b2eaa3efcc5f03ab04268aa8c1a2045fe51370ed069fbcca154",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.20/yomiwakechan2-setup-v2.20.exe",
+  "note": "配信プラットフォームの対応を広げました。ツイキャス ブラウザ版・Twitch・ふわっち・ミクチャ用のコメント取得ツールを同梱し、ギフトの個数・話者の札・匿名・高評価・出来事の通知・コメントの取り消しを受け取れるようになりました。\n【ご注意】この版で加わった配信プラットフォームの対応は、実際の配信での検証がまだ十分ではありません。読み上げや表示がおかしいときは、バージョン情報タブの「不具合の報告」からお知らせください。\nツイキャス API 版（FeederTwicasApi）をお使いの方は、ブラウザ版（FeederTwicasBrowser）への移行をおすすめします。今後のツイキャス対応はブラウザ版を中心に進めます（API 版は当面そのまま使えます）。"
 }
