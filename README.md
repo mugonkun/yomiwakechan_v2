@@ -3,7 +3,7 @@
 配信のコメントを、複数の声で読み分けて読み上げるツールです。
 ツイキャス・YouTube・ニコニコ生放送・Twitch・ふわっち・ミクチャ・Kick・ミラティブのコメント取得に対応しています。
 
-**最新版は v2.22a です（2026-10-13 公開）。**
+**最新版は v2.23 です（2026-10-13 公開）。**
 
 ## ご案内（説明書）
 
@@ -14,7 +14,8 @@
 ## ダウンロード
 
 - **[最新版インストーラ（Releases）](https://github.com/mugonkun/yomiwakechan_v2/releases/latest)**
-  … 最新版 **v2.22a**（2026-10-13 公開）
+  … 最新版 **v2.23**（2026-10-13 公開）
+- **[v2.23 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v223)**（パッドで OBS のシーンを切り替える＝声〔キュー型は読み上げ〕と同時・N 秒後・後のタイミングで・Studio Mode 中はプレビューへ）
 - **[v2.22a／v2.22 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v222)**（新タブ「パッド」・効果音の「鳴らす長さ」4 択目・Kick／ミラティブ対応・同梱ツール 9 基の新版）
 - **[v2.21a〜v2.18c の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v221)**（ニコニコ生放送・Twitch・ふわっち・ミクチャ・ツイキャス ブラウザ版に対応／出来事通知を種類ごとに受け取る・読み上げる・わんコメへ送るで選べる／初期設定ウィザードに同梱の全ツール／シャウトの承認制と 3 段化／起動時の更新確認）／[v2.18b](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v218a)・[v2.16](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew)／[v2.14](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v214)・[v2.13 の更新内容](https://mugonkun.github.io/yomiwakechan_v2/#whatsnew-v213)
   （**新エンジン irodori-TTS-for-yomiwakechan に対応**・わんコメ連携・AI連携・音声認識・起動の手順の変更・アプリ内更新ほか）<br>
