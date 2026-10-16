@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25b",
-  "builtAt": "2026-10-15T10:41:42Z",
-  "sha256": "f361b88ad5ccc4829f2999aa237de1ba0851a3f0bffd77804f2c0ffa7bdc4f3c",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25b/yomiwakechan2-setup-v2.25b.exe",
-  "note": "v2.25b：10 月 15 日の Windows Update の後、CeVIO AI が起動していない状態で本体を起動したり一括起動したりすると本体が落ちる件の対策（CeVIO AI を使っていない方には変化はありません）。\nv2.25（同日）＝コラボ席（β）・「過去ログから追加」・コメントのバインド（最後に + か ＋ で分割投稿を 1 件に連結）・パッドの背景画像・バージョン情報タブに権利者の表示と来歴の署名。"
+  "version": "v2.25c",
+  "builtAt": "2026-10-16T06:18:26Z",
+  "sha256": "5708f47377444bc3171998e09858a3ebc7a14303bfe120ba3bc802ddc9ae2203",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25c/yomiwakechan2-setup-v2.25c.exe",
+  "note": "CeVIO CS7（Creative Studio 7）に対応しました＝アプリ設定の「使用エンジン」で ✓ を入れて再スキャン\nタイムライン面にパッド帯＝押せるパッドが正方形のボタンで並び、配信画面から押せます（タイムラインタブの ✓「パッド」で表示／非表示）\nシャウトの試し読みに［打ち切り］＝長い効果音を途中で止められます"
 }
