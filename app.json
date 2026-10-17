@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25d",
-  "builtAt": "2026-10-16T09:12:48Z",
-  "sha256": "3d4542247a897ebcc850941522cad422ac3999931f94a85de3e56ccef9510c8d",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25d/yomiwakechan2-setup-v2.25d.exe",
-  "note": "タイムラインタブに［今の 1 件を止める］＝読み上げ中の 1 件の残り（効果音も）を途中で止められます\n内部の堅牢化＝結末の通知で 1 つが失敗しても他が止まらない・設定の保存の網羅テスト・起動コードの整理"
+  "version": "v2.25e",
+  "builtAt": "2026-10-17T04:38:16Z",
+  "sha256": "2ca5741b9a05cc6320d355b1f3fd72d12f00c4257e173f2ab152ff0367b7cb2f",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25e/yomiwakechan2-setup-v2.25e.exe",
+  "note": "パッドの声は本体が自動で（音を鳴らさずに）作ります＝即時型パッドに文と声を書けば［合成して保存］を押さなくても声ができます\n声がまだ無いパッドには小札「声 未準備」（パッドタブの盤とタイムライン面の帯）・編集面は「声の準備：…」・［鳴らして作り直す］\n「最後まで鳴らす」設定の長い効果音（BGM など）も［打ち切り］／［今の 1 件を止める］で止められます"
 }
