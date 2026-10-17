@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25f",
-  "builtAt": "2026-10-17T07:08:46Z",
-  "sha256": "c47e4b70e0fae7ad7af4500673aa4fe729b3b90513f6df6e7ebea28ffdf2d44f",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25f/yomiwakechan2-setup-v2.25f.exe",
-  "note": "パッドの［鳴らして作り直す］は「作ってから聞かせる」に＝音を鳴らさずに声を作り直して保存し、その後に同じ文を同じ声で試し読みとして 1 回鳴らします\nパッドの声の合成が速くなりました＝読み上げの順番待ちをせず、エンジンに直接頼んで作ります（ふつうは数秒）\n自動の合成は放送面（タイムライン面）に何も出ず、音も鳴らず、読み上げの順番にも入りません"
+  "version": "v2.25g",
+  "builtAt": "2026-10-17T09:53:56Z",
+  "sha256": "9d39125222f7d05db1d2e308e554233cb63c99742bfb8a282fe1c16a1c92bf6f",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25g/yomiwakechan2-setup-v2.25g.exe",
+  "note": "コメントの中の英文を、英語用の声（特殊読み上げ「英文検出時」）で読むようになりました\nURL も「URL検出時」の声で読みます（どちらも既定 ON・編集面の✓で切れます）\n新しくインストールした環境では、英文と URL の声が Windows 標準の英語音声（Zira）になります"
 }
