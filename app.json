@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25g",
-  "builtAt": "2026-10-17T09:53:56Z",
-  "sha256": "9d39125222f7d05db1d2e308e554233cb63c99742bfb8a282fe1c16a1c92bf6f",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25g/yomiwakechan2-setup-v2.25g.exe",
-  "note": "コメントの中の英文を、英語用の声（特殊読み上げ「英文検出時」）で読むようになりました\nURL も「URL検出時」の声で読みます（どちらも既定 ON・編集面の✓で切れます）\n新しくインストールした環境では、英文と URL の声が Windows 標準の英語音声（Zira）になります"
+  "version": "v2.25h",
+  "builtAt": "2026-10-18T00:27:41Z",
+  "sha256": "8a621993eb65bcbae3b9ec07c7a45f59823ab23402b323ccc8cfed38ea60395c",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25h/yomiwakechan2-setup-v2.25h.exe",
+  "note": "初期設定ウィザードに irodori-TTS-for-yomiwakechan の案内が出るようになりました（新規インストールの初回起動だけ）\nこの PC の GPU（NVIDIA／AMD と専用メモリ）を見て、導入できる版を案内します\n既にお使いの方の画面は変わりません"
 }
