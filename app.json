@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25i",
-  "builtAt": "2026-10-18T14:01:20Z",
-  "sha256": "eafea183bed4420e440143767a9ce1116f129ef607eec8c12eb0b752c70354cc",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25i/yomiwakechan2-setup-v2.25i.exe",
-  "note": "本文の言語分割で、本文と同じ声で読む片は分けなくなりました（1 文を 1 回で合成）\n設定の話速・音量が範囲外でも読み込み時に値域へ寄せます\nパッドの自動合成が、手動合成中に飛ばした分を作り直し・wav 使用中は 3 回まで再試行します"
+  "version": "v2.25j",
+  "builtAt": "2026-10-18T17:09:24Z",
+  "sha256": "cb393e090ff0bf71b4ebca879ec314b5482c3807c32268f19153afe5299497d4",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25j/yomiwakechan2-setup-v2.25j.exe",
+  "note": "タイムライン下端の並びが お知らせの帯→パッドの帯→音声認識の字幕 になり、帯同士がすき間なく積み重なります\nパッドの帯を使っていない方の見え方は変わりません\n「▼ さらに N 件」の札と「新着へ戻る」は字幕に重なって見えてもそのまま押せます"
 }
