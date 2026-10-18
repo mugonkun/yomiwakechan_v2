@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25h",
-  "builtAt": "2026-10-18T00:27:41Z",
-  "sha256": "8a621993eb65bcbae3b9ec07c7a45f59823ab23402b323ccc8cfed38ea60395c",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25h/yomiwakechan2-setup-v2.25h.exe",
-  "note": "初期設定ウィザードに irodori-TTS-for-yomiwakechan の案内が出るようになりました（新規インストールの初回起動だけ）\nこの PC の GPU（NVIDIA／AMD と専用メモリ）を見て、導入できる版を案内します\n既にお使いの方の画面は変わりません"
+  "version": "v2.25i",
+  "builtAt": "2026-10-18T14:01:20Z",
+  "sha256": "eafea183bed4420e440143767a9ce1116f129ef607eec8c12eb0b752c70354cc",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25i/yomiwakechan2-setup-v2.25i.exe",
+  "note": "本文の言語分割で、本文と同じ声で読む片は分けなくなりました（1 文を 1 回で合成）\n設定の話速・音量が範囲外でも読み込み時に値域へ寄せます\nパッドの自動合成が、手動合成中に飛ばした分を作り直し・wav 使用中は 3 回まで再試行します"
 }
