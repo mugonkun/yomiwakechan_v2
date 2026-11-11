@@ -7,9 +7,9 @@
     "note": "不具合報告の送り先（開発者の Discord・専用チャンネル・中継経由）"
   },
   "v": 1,
-  "version": "v2.25k",
-  "builtAt": "2026-11-10T17:36:29Z",
-  "sha256": "7cf478c6f3399e1bc8a392461f267c4070e213232418914466432bbb24707fcc",
-  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25k/yomiwakechan2-setup-v2.25k.exe",
-  "note": "配信サイト側の障害やメンテナンスで受信できないとき、タイムラインにその旨が 1 行出るようになりました（復旧したときにも出ます）\n受信を始めたとき、どの配信（アカウント）を見ているかが「受信開始」の行とフィーダー欄に表示されます\n同梱のフィーダー 11 基を新しい版にしました"
+  "version": "v2.25l",
+  "builtAt": "2026-11-11T13:32:34Z",
+  "sha256": "6b9abe2ae1ea579fa4635394353db69b215c5a73899c1bcda4c5999dd358eba1",
+  "installerUrl": "https://github.com/mugonkun/yomiwakechan_v2/releases/download/v2.25l/yomiwakechan2-setup-v2.25l.exe",
+  "note": "起動時に自動で受信を始めるフィーダーが、前回の終了時に受信していたものだけになりました\nフィーダーが設定のやり直しを求めているとき（トークンの期限切れなど）、タイムラインに 1 行出るようになりました"
 }
